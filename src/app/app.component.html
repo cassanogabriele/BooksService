@@ -1,0 +1,23 @@
+<!-- 
+Suppression du contenu par défaut et ajout d'une barre de navigation 
+
+On utilise les directives "routerLink" pour faire le lien entre les vues et les aides au routage des pages.
+-->
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <a href="#" class="navbar-brand">LearnCodiz</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item" routerLink="books" routerLinkActive="active">
+        <a href="javascript:void(0)" class="nav-link">Liste des livres</a>
+      </li>
+      <li class="nav-item" routerLink="add" routerLinkActive="active">
+        <a href="javascript:void(0)" class="nav-link">Ajouter un livre</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+     <!-- Conteneur de la vue ou des composants -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
